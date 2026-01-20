@@ -12,7 +12,11 @@
 <script>
     window.onload = function() {
       const ui = SwaggerUIBundle({
-        url: "openapi-starter-main/openapi/openapi.yaml", // path to your spec file
+        //url: "openapi-starter-main/openapi/openapi.yaml", // path to your spec file
+		urls: [
+          { url: "openapi-starter-main/openapi/openapi.yaml", name: "Service 1" },
+          { url: "openapi-starter-main/openapi/test.yaml", name: "Service 2" }
+         ],
         dom_id: '#swagger-ui',
         presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
         layout: "BaseLayout"
