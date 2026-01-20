@@ -1,2 +1,2 @@
 # Documentation
-API Documentation 
+API Documentation - Ths page displays all the documentation
